@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <p>{{voiture.year}}</p>
+    {% for voiture in voitures %}
+            <li>nome:{{voiture.name}}</li>
+            <li>nome:{{voiture.year}}</li>
+            <li>nome:{{voiture.img}}</li>
+            <li>nome:{{voiture.description}}</li>
+    {% endfor %}
+{% endblock %}
+

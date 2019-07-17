@@ -1,0 +1,95 @@
+{% extends 'layoutAdmin.html' %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-10">
+            <h1>Bonjour, {{username}}</h1>
+        </div>
+        <div class="col-2">
+            <a href="/logout"><i class="fas fa-sign-out-alt"></i></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="py-3">
+                <ul class="nav nav-tabs" role="tablist">
+                <li class="ml-2">&nbsp;</li>
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#collection" role="tab">Collection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#utilisateur" role="tab">Utilisateur</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#newsletter" role="tab">Newsletter</a>
+                </li>
+                </ul>
+            
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane p-2 active" id="collection" role="tabpanel">
+                        <h3>Ajouter une voiture</h3>
+                        <hr>
+                        <div class="row">
+                            <div class="col">
+                                <form action="/addCar" method="post" enctype="multipart/form-data">
+                                    <div class="form-group">
+                                        <label for="carName">Nom de la voiture</label>
+                                        <input type="text" class="form-control" id="carName" name="carName" placeholder="Jaguar Type-E">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="year">Année</label>
+                                        <input type="text" class="form-control" id="year" name="year" placeholder="1997">
+                                    </div>
+                                    <div class="form-group">
+                                            <label for="carImg">Image :</label>
+                                            <input type="file" id="carImg" name="carImg" accept="image/png, image/jpeg">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="description">Description</label>
+                                        <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+                                    </div>
+                                    <button class="btn btn-primary" type="submit">Ajouter une voiture</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <h3>Liste des voitures</h3>
+                            <table class="table table-dark">
+                                <tr class="text-center">
+                                    <th scope="col">#</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Image</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Etat</th>
+                                    <th scope="col">Actions</th>
+                                </tr>
+                                {% for voiture in voitures %}   
+                                <tr class="text-center">
+                                    <th scope="row">{{ voiture.id|e }}</th>
+                                    <td>{{ voiture.name|e }}</td>
+                                    <td>{{ voiture.img|e }}</td>
+                                    <td>{{ voiture.description|e }}</td>
+                                    <td><input type="checkbox" name="visibility" id="visibility" data-carid="{{voiture.id}}" {{voiture.visibility ? 'checked' }}></td>
+                                    <td>
+                                        <a href="/detail/{{voiture.id}}">voir</a><br>
+                                        <a href="/editCar/{{voiture.id}}">modifier</a><br>
+                                        <a href="/delete/{{voiture.id}}">supprimer</a><br>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane p-2" id="utilisateur" role="tabpanel">Utilisateur tab.</div>
+                    <div class="tab-pane p-2" id="newsletter" role="tabpanel">
+                        Newsletter tab
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

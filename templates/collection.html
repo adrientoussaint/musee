@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <p><a href="/collection/new">Add new ticket</a></p>
+
+    <table class="pure-table">
+        <tr>
+            <th>Title</th>
+            <th>Component</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+
+        {% for voiture in voitures %}   
+        <tr>
+                <td>{{ voiture.name|e }}</td>
+                <td>{{ voiture.img|e }}</td>
+                <td>{{ voiture.description|e }}</td>
+            <td>
+                <a href="/detail/{{voiture.id}}">view</a>
+            </td>
+        </tr>
+        {% endfor %}
+
+    </table>
+{% endblock %}
+

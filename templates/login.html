@@ -1,0 +1,20 @@
+{% extends 'layoutAdmin.html' %}
+
+{% block body %}
+<form class="form-signin" action="/admin" method="POST">
+    <!-- <img class="mb-4" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"> -->
+    <h1 class="h3 mb-3 font-weight-normal">Connectez-vous</h1>
+    <p>{{loginError}}</p>
+    <label for="username" class="sr-only">Nom d'utilisateur</label>
+    <input type="text" name="username" id="username" class="form-control" placeholder="Nom d'utilisateur" required autofocus>
+    <label for="password" class="sr-only">Mot de passe</label>
+    <input type="password" name="password" id="password" class="form-control" placeholder="Mot de passe" required>
+    <!-- <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div> -->
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Se connecter</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2018-1</p>
+</form>
+{% endblock %}
