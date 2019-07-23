@@ -92,7 +92,8 @@ img::-moz-selection {
   position: absolute;
   border-bottom: 1px solid #e9ecef;
   background-color: white;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
 }
 
 #mainNav .navbar-brand {
@@ -176,7 +177,7 @@ img::-moz-selection {
 }
 
 header.masthead {
-  margin-bottom: 50px;
+  margin-bottom: 65px;
   background: no-repeat center center;
   background-color: #868e96;
   background-attachment: scroll;
@@ -207,7 +208,7 @@ header.masthead .site-heading {
   header.masthead .page-heading,
   header.masthead .post-heading,
   header.masthead .site-heading {
-    padding: 40px;
+    padding: 45px;
   }
 }
 
@@ -224,7 +225,7 @@ header.masthead .site-heading h1 {
 
 header.masthead .page-heading .subheading,
 header.masthead .site-heading .subheading {
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: 300;
   line-height: 1.1;
   display: block;
@@ -382,12 +383,11 @@ form .form-group:first-child .floating-label-form-group {
 
 .btn {
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 600;
   padding: 15px 25px;
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 0;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .btn-primary {

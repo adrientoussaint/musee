@@ -1,11 +1,11 @@
 {% extends 'layout.html' %}
 
 {% block header %}
-<header class="masthead" style="">
+<header class="masthead">
   <div id="home-banner" class="my-5">
     <div class="site-heading">
       <span >
-        <h1 class="subheading">Le Musée de l'Automobile de Lorraine,<br> vous souhaite la bienvenue !</h1>
+        <span class="subheading title-font">Le Musée de l'Automobile de Lorraine,<br> <span class="font-weight-bold">vous souhaite la bienvenue !</span></span>
       </span>
     </div>
   </div>
@@ -17,53 +17,102 @@
 <div class="container mb-5">
   <div class="row">
     <div class="text-center" style="padding: 0 9rem;">
-      <h2>LE PREMIER MUSÉE ASSOCIATIF DE FRANCE</h2>
-      <p class="">Depuis presque 50 ans, le Musée de l'Automobile de Lorraine, situé au parc de Loisirs de la forêt de Haye à Velaine-en-Haye, <span class="font-weight-bold">expose toutes les étapes de l'évolution de l'automobile,</span> avec en permanence <span class="font-weight-bold"> une centaine de véhicules </span> qui appartiennent tous à des collectionneurs privés.</p>
-      <br>
+      <h1>LE PREMIER MUSÉE ASSOCIATIF DE FRANCE</h1>
+      <p>Depuis presque 50 ans, le Musée de l'Automobile de Lorraine, situé au parc de Loisirs de la forêt de Haye à Velaine-en-Haye, <span class="font-weight-bold">expose toutes les étapes de l'évolution de l'automobile,</span> avec en permanence <span class="font-weight-bold"> une centaine de véhicules </span> qui appartiennent tous à des collectionneurs privés.</p>
+    </div>
+  </div>
+</div>
+<div class="container mb-5">
+  <div class="row" id="imgHome">
+    <div class="col-4 text-center">
+      <div class="number-box">
+          <div class="media">
+              <img src="/img/EMS2.png" class="img-fluid" alt="" srcset="">
+          </div>
+          
+          <div class="number-overlay">
+            <span class="number-text">
+              <span class="font-weight-bold">+ 150 </span><br> voitures
+            </span>
+          </div>
+      </div>
+    </div>
+    <div class="col-4 text-center">
+      <div class="number-box">
+          <div class="media">
+              <img src="/img/EMS3.png" class="img-fluid" alt="" srcset="">
+          </div>
+          
+          <div class="number-overlay">
+            <span class="number-text">
+              <span class="font-weight-bold">50 <span>ans</span></span><br> du musée
+            </span>
+          </div>
+      </div>
+    </div>
+    <div class="col-4 text-center">
+        <div class="number-box">
+            <div class="media">
+                <img src="/img/EMS1.png" class="img-fluid" alt="" srcset="">
+            </div>
+            
+            <div class="number-overlay">
+              <span class="number-text">
+                <span class="font-weight-bold">285</span><br> membres
+              </span>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid text-center mt-5">
       <img src="/img/tripadvisor.png" alt="tripadvisor">
     </div>
   </div>
-  <hr class="divider">
 </div>
-<div class="container mb-5">
+<div class="container-fluid mb-5">
     <div class="row">
-        <div class="col text-center">
+        <div class="col text-center my-5">
           <h2>PRÉPAREZ VOTRE VISITE !</h2>
         </div>
     </div>
     <div class="row">
         <div class="col text-right separator pr-5">
-          <p class="text-uppercase">votre musée est ouvert :</p>
+          <p class="text-uppercase title-font prepare-title">votre musée est ouvert :</p>
             <dl>
               <dd class="mb-0">Les mercredis, samedis et dimanches</dd>
               <dd>De 14h à 18h</dd>
-              
+              <br>
+
               <dd class="mb-0">Tous les jours en juillet et août</dd>
               <dd>De 14h à 18h</dd>
+              <br>
+
               <dd>Le musée est fermé en décembre et janvier</dd>
             </dl>
         </div>
         <div class="col text-left pl-5">
-          <p class="text-uppercase">Tarifs :</p>
+          <p class="text-uppercase title-font prepare-title">Tarifs :</p>
           <dl>
               <dd class="mb-0">Tarif unique de 5 €</dd>
-              <dd class="mb-0">Etudiants et senior*:3,50€</dd>
+              <dd class="mb-0">Etudiants et senior* : 3,50€</dd>
               <dd>Gratuit pour les moins de 12 ans</dd>
+              <br>
               
               <dd class="mb-0">Visites guidées pour groupes sur réservation préalable</dd>
               <dd class="mb-0">Groupes d'adultes : 3,50 € / personne</dd>
               <dd>Groupes d'enfants : 2,50 € / personne</dd>
+              <br>
 
-              <dd class="text-grey">*étudiants : sous présentation de la carte étudiante</dd>
-              <dd class="text-grey">*sénior : à partir de 60 ans</dd>
+              <dd class="asterix">*étudiants : sous présentation de la carte étudiante</dd>
+              <dd class="asterix">*sénior : à partir de 60 ans</dd>
             </dl>
         </div>
     </div>
 </div>
-<div class="container mb-5">
-  <div class="row">
-    <div class="col-8 pr-5">   
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2633.403748867907!2d6.059560782982547!3d48.69776344417241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4794a49a4a39ea6b%3A0xaadec631bc2b232!2sAssociation+Lorraine+des+Amateurs+d&#39;Automobiles+de+Collection+(A.L.A.A.C.)!5e0!3m2!1sfr!2sfr!4v1563364697085!5m2!1sfr!2sfr" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>  
+<div class="container-fluid my-5">
+  <div class="row d-flex align-items-center">
+    <div class="col-8 text-center pr-0">   
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2633.403748867907!2d6.059560782982547!3d48.69776344417241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4794a49a4a39ea6b%3A0xaadec631bc2b232!2sAssociation+Lorraine+des+Amateurs+d&#39;Automobiles+de+Collection+(A.L.A.A.C.)!5e0!3m2!1sfr!2sfr!4v1563364697085!5m2!1sfr!2sfr" width="80%" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>  
     </div>
     <div class="col-4">
       <h3>VENIR AU MUSÉE</h3>
@@ -75,21 +124,21 @@
           
           <dd class="mb-0">20 minutes de Nancy</dd>
           <dd class="mb-0">45 minutes de Metz</dd>
-          <dd class="mb-0">1h45 de Strasbourg</dd>
           <dd class="mb-0">1h40 de Luxembourg</dd>
+          <dd class="mb-0">1h45 de Strasbourg</dd>
         </dl>
     </div>
   </div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid my-5">
   <div class="row">
     <div class="col-4">
       <div class="text-center pr-5">
         <h3 class="text-uppercase">Nous contacter</h3>
         <p>03 83 23 28 38</p>
-        <p>contact@musee-automobile-lorraine.fr</p>
-        <a href="http://facebook.fr" class="btn " target="_blank">
-          <span class="fa-stack fa-lg">
+        <a href="mailto:adrien-toussaint@hotmail.fr>" class="open-modal-contact">contact@musee-automobile-lorraine.fr</a>
+        <a href="http://facebook.fr" class="btn btn-opacity btn-fb mt-4" target="_blank">
+          <span class="fa-stack">
               <i class="fas fa-circle fa-stack-2x"></i>
               <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
           </span>
@@ -102,21 +151,30 @@
     <div class="col-8">
       <div id="newsletter" class="pl-5">
         <div class="heading">
-          <h3 class="text-uppercase">S'inscrire à la newsletter</h3>
+          <h3 class="text-uppercase mb-4">S'inscrire à la newsletter</h3>
         </div>
         <div class="newsletter-box">
-          <p class="mt-0">Soyez au courant des nouvelles expositions, des prochains évènements et des dernières actualités !</p>
+          <p class="mt-0 mb-3">Soyez au courant des nouvelles expositions, des prochains évènements et <br>des dernières actualités !</p>
           <div class="container">
             <div class="row">
-                  <div class="col-8">
-                    <input type="text" class="form-control" placeholder="VOTRE EMAIL" name="email" id="emailNewsletter">
-                    <div class="form-check form-check-inline mt-3">
-                      <input class="form-check-input" type="checkbox" name="inlineRadioOptions" value="option1">
-                      <label class="form-check-label" for="inlineRadio1">Cochez cette case pour accepter de recevoir nos newsletters</label>
+                  <div class="col-9">
+                    <input type="text" class="form-control my-3" placeholder="VOTRE EMAIL" name="email" id="emailNewsletter">
+                    <div class="form-check form-check-inline mt-4">
+                        <div class="pretty p-icon p-curve p-fill newsletter-chk">
+                            <input type="checkbox" name="accept-newsletter"/>
+                            <div class="state align-middle">
+                                <i class="icon fas fa-check"></i>
+                                <label>
+                                    <span class="newsletter-chk-title">Cochez cette case pour accepter de recevoir nos newsletters.</span>
+                                    <span class="newsletter-chk-desc">Le formulaire vous inscrit uniquement à notre newsletter. Nous nous engageons à ne jamais dévoiler, diffuser, distribuer ou vendre vos données.</span>
+                                    <span class="newsletter-chk-desc">Celles-ci sont exclusivement destinées à un usage interne, et vous conservez à tout moment la possibilité de modifier vos préférences.</span>    
+                                </label>
+                            </div>
+                        </div>
                     </div>
                   </div>
-                <div class="col-4 align-middle">
-                  <button id="submitNewsletter" class="btn btn-secondary btn-block disabled" >S'inscrire</button>
+                <div class="col-3 align-middle">
+                  <button id="submitNewsletter" class="btn newsletter-btn btn-lg disabled px-5 py-2 my-3" >S'inscrire</button>
                 </div>
             </div>
           </div>
@@ -126,7 +184,7 @@
   </div>
 </div>
 
-<div class="container">
+<!-- <div class="container">
   <div id="feed">
       {% for i,post in fb_feed.data %}
       <div class='feed-box'>
@@ -137,5 +195,5 @@
       </div>
       {% endfor %}
   </div>
-</div>
+</div> -->
 {% endblock %}
