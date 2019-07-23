@@ -16,7 +16,7 @@
 {% block body %}
 <div class="container mb-5">
   <div class="row">
-    <div class="text-center">
+    <div class="text-center" style="padding: 0 9rem;">
       <h2>LE PREMIER MUSÉE ASSOCIATIF DE FRANCE</h2>
       <p class="">Depuis presque 50 ans, le Musée de l'Automobile de Lorraine, situé au parc de Loisirs de la forêt de Haye à Velaine-en-Haye, <span class="font-weight-bold">expose toutes les étapes de l'évolution de l'automobile,</span> avec en permanence <span class="font-weight-bold"> une centaine de véhicules </span> qui appartiennent tous à des collectionneurs privés.</p>
       <br>
@@ -32,7 +32,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col text-right separator">
+        <div class="col text-right separator pr-5">
           <p class="text-uppercase">votre musée est ouvert :</p>
             <dl>
               <dd class="mb-0">Les mercredis, samedis et dimanches</dd>
@@ -43,7 +43,7 @@
               <dd>Le musée est fermé en décembre et janvier</dd>
             </dl>
         </div>
-        <div class="col text-left">
+        <div class="col text-left pl-5">
           <p class="text-uppercase">Tarifs :</p>
           <dl>
               <dd class="mb-0">Tarif unique de 5 €</dd>
@@ -62,7 +62,7 @@
 </div>
 <div class="container mb-5">
   <div class="row">
-    <div class="col-8">   
+    <div class="col-8 pr-5">   
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2633.403748867907!2d6.059560782982547!3d48.69776344417241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4794a49a4a39ea6b%3A0xaadec631bc2b232!2sAssociation+Lorraine+des+Amateurs+d&#39;Automobiles+de+Collection+(A.L.A.A.C.)!5e0!3m2!1sfr!2sfr!4v1563364697085!5m2!1sfr!2sfr" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>  
     </div>
     <div class="col-4">
@@ -125,8 +125,8 @@
     </div>
   </div>
 </div>
-{#
-<div class="container-fluid">
+
+<div class="container">
   <div id="feed">
       {% for i,post in fb_feed.data %}
       <div class='feed-box'>
@@ -137,5 +137,5 @@
       </div>
       {% endfor %}
   </div>
-</div>#}
+</div>
 {% endblock %}
