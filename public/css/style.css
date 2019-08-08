@@ -303,12 +303,16 @@ span.subheading{
 
 .newsletter-chk .state label::after,.newsletter-chk .state label::before{
   background-color: #fff !important;
-  top:calc((0% - (100% - 1em)) - -51%) !important;
+  /* top:calc((0% - (100% - 1em)) - -51%) !important; */
+}
+
+.newsletter-chk .state{
+  white-space: initial;
 }
 
 .newsletter-chk i.icon{
   font-size:1.2rem !important;
-  top:calc((0% - (100% - 1em)) - -51%) !important;
+  /* top:calc((0% - (100% - 1em)) - -51%) !important; */
   color:black;
 }
 
@@ -319,7 +323,8 @@ span.subheading{
 }
 
 .newsletter-chk-desc{
-  font-size: 14px;
+  font-size: 0.7rem;
+  line-height: 0.8rem;
 }
 
 .newsletter-chk label span:nth-child(2){
