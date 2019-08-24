@@ -33,24 +33,6 @@
     })
 
     $("#submitNewsletter").on('click', function(){
-      // if($("#emailNewsletter").val(undefined)){
-      //   $.toast({
-      //     heading: 'Information',
-      //     text: 'Veuillez rentrer un email',
-      //     icon: 'info',
-      //     loader: true,        // Change it to false to disable loader
-      //     loaderBg: '#9EC600'  // To change the background
-      //   })
-      // }else if(validateEmail($("#emailNewsletter").val())){
-      // console.log("coucou");
-      //   $.toast({
-      //     heading: 'Information',
-      //     text: 'Veuillez rentrer un mail valide',
-      //     icon: 'info',
-      //     loader: true,        // Change it to false to disable loader
-      //     loaderBg: '#9EC600'  // To change the background
-      //   })
-      // }else{
         var email = $("#emailNewsletter").val();
         $.ajax({
           method:"POST",
@@ -65,8 +47,6 @@
             loaderBg: '#9EC600'  // To change the background
           })
         })
-      // }
-
     })
 
     $(document).ready(function(){
